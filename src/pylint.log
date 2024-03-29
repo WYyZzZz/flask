@@ -1,0 +1,352 @@
+************* Module flask
+flask/__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/__init__.py:5:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:6:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:7:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:8:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:9:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:10:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:11:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:12:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:13:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:14:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:15:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:16:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:17:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:18:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:19:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:20:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:21:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:22:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:23:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:24:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:25:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:26:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:27:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:28:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:29:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:30:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:31:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:32:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:33:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:34:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:35:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:36:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:37:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:38:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:39:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:40:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:41:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:42:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:43:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/__init__.py:48:8: C0415: Import outside toplevel (importlib.metadata) (import-outside-toplevel)
+flask/__init__.py:49:8: C0415: Import outside toplevel (warnings) (import-outside-toplevel)
+************* Module flask.logging
+flask/logging.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module flask.signals
+flask/signals.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module flask.sessions
+flask/sessions.py:108:0: C0301: Line too long (112/100) (line-too-long)
+flask/sessions.py:205:0: C0301: Line too long (113/100) (line-too-long)
+flask/sessions.py:23:1: W0511: TODO generic when Python > 3.8 (fixme)
+flask/sessions.py:52:1: W0511: TODO generic when Python > 3.8 (fixme)
+flask/sessions.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/sessions.py:24:0: W0223: Method '__delitem__' is abstract in class 'MutableMapping' but is not overridden (abstract-method)
+flask/sessions.py:24:0: W0223: Method '__getitem__' is abstract in class 'Mapping' but is not overridden (abstract-method)
+flask/sessions.py:24:0: W0223: Method '__iter__' is abstract in class 'Iterable' but is not overridden (abstract-method)
+flask/sessions.py:24:0: W0223: Method '__len__' is abstract in class 'Sized' but is not overridden (abstract-method)
+flask/sessions.py:24:0: W0223: Method '__setitem__' is abstract in class 'MutableMapping' but is not overridden (abstract-method)
+flask/sessions.py:162:32: W0613: Unused argument 'app' (unused-argument)
+flask/sessions.py:299:4: C0116: Missing function or method docstring (missing-function-docstring)
+flask/sessions.py:313:8: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+************* Module flask.config
+flask/config.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/config.py:41:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:44:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:116:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:165:19: W0703: Catching too general exception Exception (broad-except)
+flask/config.py:210:8: C0103: Variable name "d" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:214:16: W0122: Use of exec (exec-used)
+flask/config.py:215:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:298:17: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+flask/config.py:298:58: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:300:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:358:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/config.py:359:15: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+************* Module flask.templating
+flask/templating.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/templating.py:30:4: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/templating.py:71:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/templating.py:76:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/templating.py:80:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/templating.py:83:8: C0415: Import outside toplevel (debughelpers.explain_template_loading_attempts) (import-outside-toplevel)
+flask/templating.py:101:28: W0613: Unused argument 'template' (unused-argument)
+flask/templating.py:131:4: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/templating.py:148:10: W0212: Access to a protected member _get_current_object of a client class (protected-access)
+flask/templating.py:160:10: W0212: Access to a protected member _get_current_object of a client class (protected-access)
+flask/templating.py:179:4: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/templating.py:183:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/templating.py:202:10: W0212: Access to a protected member _get_current_object of a client class (protected-access)
+flask/templating.py:217:10: W0212: Access to a protected member _get_current_object of a client class (protected-access)
+************* Module flask.globals
+flask/globals.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/globals.py:17:0: C0103: Constant name "_no_app_msg" doesn't conform to UPPER_CASE naming style (invalid-name)
+flask/globals.py:35:0: C0103: Constant name "_no_req_msg" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module flask.blueprints
+flask/blueprints.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/blueprints.py:10:0: C0414: Import alias does not rename original package (useless-import-alias)
+flask/blueprints.py:16:0: C0115: Missing class docstring (missing-class-docstring)
+flask/blueprints.py:17:36: W0613: Unused argument 'filename' (unused-argument)
+flask/blueprints.py:91:15: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+flask/blueprints.py:10:0: W0611: Unused BlueprintSetupState imported from sansio.blueprints as BlueprintSetupState (unused-import)
+************* Module flask.cli
+flask/cli.py:621:0: C0301: Line too long (105/100) (line-too-long)
+flask/cli.py:1:0: C0302: Too many lines in module (1111/1000) (too-many-lines)
+flask/cli.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/cli.py:45:4: W0621: Redefining name 'Flask' from outer scope (line 34) (redefined-outer-name)
+flask/cli.py:45:4: C0415: Import outside toplevel (.Flask) (import-outside-toplevel)
+flask/cli.py:57:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+flask/cli.py:76:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:94:28: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:102:4: C0103: Variable name "tb" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:110:12: C0103: Variable name "tb" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:124:4: W0621: Redefining name 'Flask' from outer scope (line 34) (redefined-outer-name)
+flask/cli.py:124:4: C0415: Import outside toplevel (.Flask) (import-outside-toplevel)
+flask/cli.py:169:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:179:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:243:0: C0116: Missing function or method docstring (missing-function-docstring)
+flask/cli.py:251:8: R1720: Unnecessary "elif" after "raise", remove the leading "el" from "elif" (no-else-raise)
+flask/cli.py:263:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+flask/cli.py:269:0: C0116: Missing function or method docstring (missing-function-docstring)
+flask/cli.py:269:36: W0613: Unused argument 'param' (unused-argument)
+flask/cli.py:295:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+flask/cli.py:368:20: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:410:22: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:413:19: R1725: Consider using Python 3 style super() without arguments (super-with-arguments)
+flask/cli.py:428:33: W0613: Unused argument 'param' (unused-argument)
+flask/cli.py:487:4: W0621: Redefining name 'importlib' from outer scope (line 5) (redefined-outer-name)
+flask/cli.py:487:4: C0415: Import outside toplevel (importlib) (import-outside-toplevel)
+flask/cli.py:545:4: R0913: Too many arguments (6/5) (too-many-arguments)
+flask/cli.py:550:8: W0621: Redefining name 'load_dotenv' from outer scope (line 689) (redefined-outer-name)
+flask/cli.py:587:12: W0404: Reimport 'metadata' (imported line 5) (reimported)
+flask/cli.py:587:12: C0415: Import outside toplevel (importlib.metadata) (import-outside-toplevel)
+flask/cli.py:592:12: C0415: Import outside toplevel (importlib_metadata) (import-outside-toplevel)
+flask/cli.py:594:12: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:594:18: E1123: Unexpected keyword argument 'group' in function call (unexpected-keyword-arg)
+flask/cli.py:599:4: W0237: Parameter 'cmd_name' has been renamed to 'name' in overridden 'FlaskGroup.get_command' method (arguments-renamed)
+flask/cli.py:603:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:614:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:621:30: W0212: Access to a protected member _get_current_object of a client class (protected-access)
+flask/cli.py:629:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:640:15: W0703: Catching too general exception Exception (broad-except)
+flask/cli.py:636:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:716:8: C0415: Import outside toplevel (dotenv) (import-outside-toplevel)
+flask/cli.py:779:12: W0621: Redefining name 'ssl' from outer scope (line 28) (redefined-outer-name)
+flask/cli.py:779:12: C0415: Import outside toplevel (ssl) (import-outside-toplevel)
+flask/cli.py:794:20: C0415: Import outside toplevel (cryptography) (import-outside-toplevel)
+flask/cli.py:794:20: W0611: Unused import cryptography (unused-import)
+flask/cli.py:820:8: W0621: Redefining name 'ssl' from outer scope (line 28) (redefined-outer-name)
+flask/cli.py:820:8: C0415: Import outside toplevel (ssl) (import-outside-toplevel)
+flask/cli.py:919:0: R0913: Too many arguments (9/5) (too-many-arguments)
+flask/cli.py:940:11: W0703: Catching too general exception Exception (broad-except)
+flask/cli.py:940:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:993:4: C0415: Import outside toplevel (code) (import-outside-toplevel)
+flask/cli.py:1006:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+flask/cli.py:1006:30: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+flask/cli.py:1007:12: W0123: Use of eval (eval-used)
+flask/cli.py:1018:12: C0415: Import outside toplevel (readline) (import-outside-toplevel)
+flask/cli.py:1019:12: C0415: Import outside toplevel (rlcompleter.Completer) (import-outside-toplevel)
+flask/cli.py:1106:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module flask.wrappers
+flask/wrappers.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/wrappers.py:58:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+flask/wrappers.py:125:12: C0415: Import outside toplevel (debughelpers.attach_enctype_error_multidict) (import-outside-toplevel)
+flask/wrappers.py:132:8: R1704: Redefining argument with the local name 'e' (redefined-argument-from-local)
+************* Module flask.app
+flask/app.py:260:0: C0301: Line too long (102/100) (line-too-long)
+flask/app.py:855:0: C0301: Line too long (111/100) (line-too-long)
+flask/app.py:1:0: C0302: Too many lines in module (1488/1000) (too-many-lines)
+flask/app.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/app.py:29:0: W0404: Reimport 'typing' (imported line 6) (reimported)
+flask/app.py:63:0: C0103: Type variable name "T_shell_context_processor" doesn't conform to predefined naming style (invalid-name)
+flask/app.py:66:0: C0103: Type variable name "T_teardown" doesn't conform to predefined naming style (invalid-name)
+flask/app.py:67:0: C0103: Type variable name "T_template_filter" doesn't conform to predefined naming style (invalid-name)
+flask/app.py:68:0: C0103: Type variable name "T_template_global" doesn't conform to predefined naming style (invalid-name)
+flask/app.py:69:0: C0103: Type variable name "T_template_test" doesn't conform to predefined naming style (invalid-name)
+flask/app.py:218:4: R0913: Too many arguments (11/5) (too-many-arguments)
+flask/app.py:263:36: W0613: Unused argument 'filename' (unused-argument)
+flask/app.py:337:15: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+flask/app.py:349:15: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+flask/app.py:376:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:391:33: W0621: Redefining name 'request' from outer scope (line 36) (redefined-outer-name)
+flask/app.py:431:38: W0621: Redefining name 'request' from outer scope (line 36) (redefined-outer-name)
+flask/app.py:455:8: C0415: Import outside toplevel (debughelpers.FormDataRoutingRedirect) (import-outside-toplevel)
+flask/app.py:494:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:612:8: C0415: Import outside toplevel (werkzeug.serving.run_simple) (import-outside-toplevel)
+flask/app.py:499:4: R0912: Too many branches (14/12) (too-many-branches)
+flask/app.py:675:12: C0415: Import outside toplevel (testing.FlaskClient) (import-outside-toplevel)
+flask/app.py:693:12: C0415: Import outside toplevel (testing.FlaskCliRunner) (import-outside-toplevel)
+flask/app.py:698:14: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:733:14: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:760:12: E0704: The raise statement is not inside an except clause (misplaced-bare-raise)
+flask/app.py:764:31: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:803:16: E0704: The raise statement is not inside an except clause (misplaced-bare-raise)
+flask/app.py:828:8: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+flask/app.py:871:15: W0703: Catching too general exception Exception (broad-except)
+flask/app.py:868:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:870:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:871:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:872:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:877:8: C0103: Argument name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:898:15: W0703: Catching too general exception Exception (broad-except)
+flask/app.py:915:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:948:12: C0415: Import outside toplevel (asgiref.sync.async_to_sync) (import-outside-toplevel)
+flask/app.py:1063:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:1078:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:956:4: R0912: Too many branches (13/12) (too-many-branches)
+flask/app.py:1082:28: C0103: Argument name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:1172:15: R1701: Consider merging these isinstance calls to isinstance(rv, (bytearray, bytes, cabc.Iterator, str)) (consider-merging-isinstance)
+flask/app.py:1192:16: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:1082:4: R0912: Too many branches (17/12) (too-many-branches)
+flask/app.py:1243:20: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:1263:14: W0212: Access to a protected member _get_current_object of a client class (protected-access)
+flask/app.py:1265:20: W0212: Access to a protected member _after_request_functions of a client class (protected-access)
+flask/app.py:1422:8: C0415: Import outside toplevel (testing.EnvironBuilder) (import-outside-toplevel)
+flask/app.py:1464:19: W0703: Catching too general exception Exception (broad-except)
+flask/app.py:1464:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/app.py:79:0: R0904: Too many public methods (32/20) (too-many-public-methods)
+************* Module flask.debughelpers
+flask/debughelpers.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/debughelpers.py:28:4: W0231: __init__ method from base class 'KeyError' is not called (super-init-not-called)
+flask/debughelpers.py:28:4: W0231: __init__ method from base class 'AssertionError' is not called (super-init-not-called)
+flask/debughelpers.py:90:4: C0115: Missing class docstring (missing-class-docstring)
+flask/debughelpers.py:90:4: C0103: Class name "newcls" doesn't conform to PascalCase naming style (invalid-name)
+flask/debughelpers.py:94:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/debughelpers.py:90:4: R0903: Too few public methods (1/2) (too-few-public-methods)
+flask/debughelpers.py:112:8: R1724: Unnecessary "elif" after "continue", remove the leading "el" from "elif" (no-else-continue)
+************* Module flask.ctx
+flask/ctx.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/ctx.py:11:0: W0404: Reimport 'typing' (imported line 5) (reimported)
+flask/ctx.py:87:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+flask/ctx.py:118:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+flask/ctx.py:148:4: W0212: Access to a protected member _after_request_functions of a client class (protected-access)
+flask/ctx.py:155:33: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+flask/ctx.py:248:8: C0103: Attribute name "g" doesn't conform to snake_case naming style (invalid-name)
+flask/ctx.py:282:8: C0103: Argument name "tb" doesn't conform to snake_case naming style (invalid-name)
+flask/ctx.py:324:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/ctx.py:364:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+flask/ctx.py:367:4: C0116: Missing function or method docstring (missing-function-docstring)
+flask/ctx.py:414:20: E1102: request_close is not callable (not-callable)
+flask/ctx.py:441:8: C0103: Argument name "tb" doesn't conform to snake_case naming style (invalid-name)
+************* Module flask.typing
+flask/typing.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module flask.testing
+flask/testing.py:216:0: C0301: Line too long (111/100) (line-too-long)
+flask/testing.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/testing.py:48:4: R0913: Too many arguments (6/5) (too-many-arguments)
+flask/testing.py:48:4: W1113: Keyword argument before variable positional arguments list in the definition of __init__ function (keyword-arg-before-vararg)
+flask/testing.py:97:0: C0103: Constant name "_werkzeug_version" doesn't conform to UPPER_CASE naming style (invalid-name)
+flask/testing.py:101:4: C0103: Constant name "_werkzeug_version" doesn't conform to UPPER_CASE naming style (invalid-name)
+flask/testing.py:101:4: W0603: Using the global statement (global-statement)
+flask/testing.py:244:12: C0103: Variable name "cm" doesn't conform to snake_case naming style (invalid-name)
+flask/testing.py:259:8: C0103: Argument name "tb" doesn't conform to snake_case naming style (invalid-name)
+flask/testing.py:275:4: W0221: Number of parameters was 8 in 'CliRunner.invoke' and is now 4 in overridden 'FlaskCliRunner.invoke' method (arguments-differ)
+************* Module flask.helpers
+flask/helpers.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/helpers.py:231:36: C0103: Argument name "Response" doesn't conform to snake_case naming style (invalid-name)
+flask/helpers.py:231:36: W0621: Redefining name 'Response' from outer scope (line 24) (redefined-outer-name)
+flask/helpers.py:324:10: W0212: Access to a protected member _get_current_object of a client class (protected-access)
+flask/helpers.py:388:0: R0913: Too many arguments (8/5) (too-many-arguments)
+************* Module flask.__main__
+flask/__main__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module flask.views
+flask/views.py:110:0: C0301: Line too long (110/100) (line-too-long)
+flask/views.py:116:0: C0301: Line too long (110/100) (line-too-long)
+flask/views.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/views.py:5:0: W0404: Reimport 'typing' (imported line 3) (reimported)
+************* Module flask.json.provider
+flask/json/provider.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/json/provider.py:49:31: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+flask/json/provider.py:59:20: C0103: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
+flask/json/provider.py:67:19: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+flask/json/provider.py:108:13: C0103: Argument name "o" doesn't conform to snake_case naming style (invalid-name)
+************* Module flask.json
+flask/json/__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+flask/json/__init__.py:47:21: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+flask/json/__init__.py:77:10: C0103: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
+flask/json/__init__.py:108:9: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+************* Module flask.json.tag
+flask/json/tag.py:118:0: C0115: Missing class docstring (missing-class-docstring)
+flask/json/tag.py:118:0: W0223: Method 'to_python' is abstract in class 'JSONTag' but is not overridden (abstract-method)
+flask/json/tag.py:132:0: C0115: Missing class docstring (missing-class-docstring)
+flask/json/tag.py:146:0: C0115: Missing class docstring (missing-class-docstring)
+flask/json/tag.py:146:0: W0223: Method 'to_python' is abstract in class 'JSONTag' but is not overridden (abstract-method)
+flask/json/tag.py:158:0: C0115: Missing class docstring (missing-class-docstring)
+flask/json/tag.py:190:0: C0115: Missing class docstring (missing-class-docstring)
+flask/json/tag.py:204:0: C0115: Missing class docstring (missing-class-docstring)
+flask/json/tag.py:1:0: R0801: Similar lines in 2 files
+==flask.app:[279:348]
+==flask.blueprints:[33:91]
+        value = current_app.config["SEND_FILE_MAX_AGE_DEFAULT"]
+
+        if value is None:
+            return None
+
+        if isinstance(value, timedelta):
+            return int(value.total_seconds())
+
+        return value  # type: ignore[no-any-return]
+
+    def send_static_file(self, filename: str) -> Response:
+        """The view function used to serve files from
+        :attr:`static_folder`. A route is automatically registered for
+        this view at :attr:`static_url_path` if :attr:`static_folder` is
+        set.
+
+        Note this is a duplicate of the same method in the Flask
+        class.
+
+        .. versionadded:: 0.5
+
+        """
+        if not self.has_static_folder:
+            raise RuntimeError("'static_folder' must be set to serve static_files.")
+
+        # send_file only knows to call get_send_file_max_age on the app,
+        # call it here so it works for blueprints too.
+        max_age = self.get_send_file_max_age(filename)
+        return send_from_directory(
+            t.cast(str, self.static_folder), filename, max_age=max_age
+        )
+
+    def open_resource(self, resource: str, mode: str = "rb") -> t.IO[t.AnyStr]:
+        """Open a resource file relative to :attr:`root_path` for
+        reading.
+
+        For example, if the file ``schema.sql`` is next to the file
+        ``app.py`` where the ``Flask`` app is defined, it can be opened
+        with:
+
+        .. code-block:: python
+
+            with app.open_resource("schema.sql") as f:
+                conn.executescript(f.read())
+
+        :param resource: Path to the resource relative to
+            :attr:`root_path`.
+        :param mode: Open the file in this mode. Only reading is
+            supported, valid values are "r" (or "rt") and "rb".
+
+        Note this is a duplicate of the same method in the Flask
+        class.
+
+        """
+        if mode not in {"r", "rt", "rb"}:
+            raise ValueError("Resources can only be opened for reading.")
+
+        return open(os.path.join(self.root_path, resource), mode) (duplicate-code)
+flask/json/tag.py:1:0: R0401: Cyclic import (flask -> flask.app -> flask.cli) (cyclic-import)
+
+------------------------------------------------------------------
+Your code has been rated at 8.68/10 (previous run: 8.68/10, +0.00)
+
