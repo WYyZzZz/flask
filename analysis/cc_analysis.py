@@ -1,77 +1,79 @@
-def parse_radoncc_output(file_path):
-    # 初始化存储结构
-    parsed_results = {}
+import re
+from collections import defaultdict
 
-    # 打开并读取文件
-    with open(file_path, 'r') as file:
-        lines = file.readlines()
-
-    current_file = None
-
-    summary_started = False  # 标记是否开始处理总结信息
-
-    for line in lines:
-        line = line.strip()
-        if not line:
-            summary_started = True  # 遇到空行，下一部分可能是总结信息
-            parsed_results['summary'] = []
-            continue
-
-        if summary_started:
-            parsed_results['summary'].append(line)
-
-        else:
-            if line and not line.startswith('    '):
-                # 这是一个新文件的开始
-                current_file = line
-                parsed_results[current_file] = []
-            else:
-                # 这是当前文件的一个代码块条目
-                parts = line.split(' ')
-                if len(parts) > 3:  # 确保行是代码块条目格式
-                    block_type = parts[0]  # 类型：F、M或C
-                    line_no = parts[1]  # 行号
-                    name = ' '.join(parts[2:-3])  # 代码块名称
-                    complexity_grade = parts[-3]  # 复杂度等级，如A、B、C、D
-                    complexity_score = parts[-2] + parts[-1]  # 复杂度得分，如(5)
-                    parsed_results[current_file].append({
-                        'type': block_type,
-                        'line_no': line_no,
-                        'name': name,
-                        'complexity_grade': complexity_grade,
-                        'complexity_score': complexity_score
-                    })
-
-    # 返回解析结果
-    return parsed_results
-def print_parsed_results_with_summary(parsed_results, output_file_path):
-    with open(output_file_path, 'w') as file:
-        # 遍历解析结果，打印并写入到文件
-        for key, value in parsed_results.items():
-            if key == 'summary':
-                # 打印并写入总结信息
-                file.write("Summary:\n")
-                print("Summary:")
-                for summary_line in value:
-                    file.write(f"{summary_line}\n")
-                    print(summary_line)
-            else:
-                # 打印并写入文件的代码块信息
-                file.write(f"{key}\n")
-                print(f"{key}")
-                for block in value:
-                    block_info = f"  Type: {block['type']}, Line No: {block['line_no']}, Name: {block['name']}, Complexity Grade: {block['complexity_grade']}, Complexity Score: {block['complexity_score']}"
-                    file.write(f"{block_info}\n")
-                    print(block_info)
-            file.write("\n")
-            print()
+# Cyclomatic Complexity Grade Thresholds
+GRADE_THRESHOLDS = {
+    'A': (1, 5),
+    'B': (6, 10),
+    'C': (11, 20),
+    'D': (21, 40),
+    'E': (41, 100)
+}
 
 
-# 假设这是你的文件路径
-input_file_path = '../src/radoncc.log'
-output_file_path = 'cc_analysis.txt'
-# 解析radoncc输出
-parsed_results = parse_radoncc_output(input_file_path)
+def parse_log(log_lines):
+    # 解析每一行的正则表达式
+    pattern = r"^\s*(\w)\s+(\d+):\d+\s+([\w\.]+)\s+-\s+(\w)\s+\((\d+)\)"
+    file_pattern = r"^src/flask/(\w+)\.py"
+    # 存储解析结果
+    parsed_data = defaultdict(list)
+    module = None
+    for line in log_lines:
+        file = re.search(file_pattern, line)
+        if file:
+            module = file.groups()[0]+'.py'
+        match = re.search(pattern, line)
+        if match:
+            item_type, line_number, name, grade, cc = match.groups()
+            parsed_data[grade].append({
+                "type": item_type,
+                "line_number": int(line_number),
+                "name": name,
+                "cc": int(cc),
+                "module": module
+            })
+    return parsed_data
 
-# 打印解析结果并将其保存到文件
-print_parsed_results_with_summary(parsed_results, output_file_path)
+# 根据给定的分数等级对日志进行进一步排序
+def sort_by_grade(classified_data):
+    # 将等级转换为可排序的数值（A最高，随后是B，C，等等）
+    grade_order = {"A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6}
+    sorted_data = sorted(classified_data.items(), key=lambda x: grade_order[x[0]])
+    return sorted_data
+
+# 对已分类和排序的日志数据按等级再排序
+
+
+
+# 数据分类和排序
+def classify_and_sort(parsed_data):
+    for grade in parsed_data.keys():
+        # 按照 CC 值降序排序
+        parsed_data[grade].sort(key=lambda x: x['cc'], reverse=True)
+    return parsed_data
+
+
+# Main function to read from log file and process
+def process_log_file(log_file_path):
+    with open(log_file_path, 'r') as log_file:
+        log_lines = log_file.readlines()
+
+    log = parse_log(log_lines)
+
+    classified_data = classify_and_sort(log)
+
+    classified_data = sort_by_grade(classified_data)
+
+    # Print classified data
+    for grade, items in classified_data:
+        print(f"Grade {grade}:")
+        for item in items:
+            print(
+                f"  {item['type']} {item['line_number']}:0 {item['name']} - {grade} ({item['cc']})")
+        print("\n")
+
+if __name__ == '__main__':
+    # Replace 'your_log_file.log' with the path to your actual log file
+    log_file_path = 'srccc.log'
+    process_log_file(log_file_path)
+
