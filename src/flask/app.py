@@ -1467,6 +1467,7 @@ class Flask(App):
         """
         ctx = self.request_context(environ)
         error: BaseException | None = None
+        env_debug = "werkzeug.debug.preserve_context"
         try:
             try:
                 ctx.push()
@@ -1479,9 +1480,9 @@ class Flask(App):
                 raise
             return response(environ, start_response)
         finally:
-            if "werkzeug.debug.preserve_context" in environ:
-                environ["werkzeug.debug.preserve_context"](_cv_app.get())
-                environ["werkzeug.debug.preserve_context"](_cv_request.get())
+            if env_debug in environ:
+                environ[env_debug](_cv_app.get())
+                environ[env_debug](_cv_request.get())
 
             if error is not None and self.should_ignore_error(error):
                 error = None
